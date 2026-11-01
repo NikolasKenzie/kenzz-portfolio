@@ -1,0 +1,290 @@
+/* =========================
+   ABOUT SECTION
+========================= */
+
+#about {
+    width: 100%;
+    min-height: 100vh;
+
+    padding: 110px 10%;
+
+    
+
+    position: relative;
+}
+
+
+/* MAIN CONTAINER */
+
+.container-about {
+    width: 100%;
+    max-width: 1250px;
+    margin: auto;
+}
+
+
+/* =========================
+   SECTION LABEL
+========================= */
+
+.section-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+
+    letter-spacing: 2px;
+    color: #54C8FF;
+
+    margin-bottom: 20px;
+}
+
+.section-label span {
+    width: 25px;
+    height: 2px;
+
+    background: #54C8FF;
+}
+
+
+/* =========================
+   INTRODUCTION
+========================= */
+
+.about-intro {
+    max-width: 850px;
+}
+
+.about-intro h2,
+.hobby-section h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: clamp(35px, 4vw, 48px);
+
+    font-weight: 700;
+    color: white;
+
+    margin-bottom: 15px;
+}
+
+.about-intro h2 span,
+.hobby-section h2 span {
+    color: #54C8FF;
+}
+
+.about-intro h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 20px;
+
+    font-weight: 500;
+    color: #B6DDF0;
+
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.about-description {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.about-description p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+
+    line-height: 1.9;
+    color: #91A4BD;
+
+    text-align: justify;
+}
+
+
+/* =========================
+   HOBBY SECTION
+========================= */
+
+.hobby-section {
+    margin-top: 100px;
+}
+
+.hobby-section h2 {
+    margin-bottom: 35px;
+}
+
+
+/* HOBBY CONTAINER */
+
+.hobby-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+
+/* HOBBY CARD */
+
+.hobby-card {
+    position: relative;
+    overflow: hidden;
+
+    padding: 30px 25px;
+
+    min-height: 230px;
+
+    background: #0D1929;
+
+    border: 1px solid #20334B;
+    border-radius: 8px;
+
+    transition: 0.3s ease;
+}
+
+.hobby-card:hover {
+    transform: translateY(-7px);
+
+    border-color: #328FC2;
+
+    box-shadow:
+        0 10px 35px rgba(0, 140, 255, 0.08);
+}
+
+
+/* HOBBY ICON */
+
+.hobby-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(72, 201, 255, 0.1);
+
+    border: 1px solid rgba(72, 201, 255, 0.2);
+    border-radius: 8px;
+
+    margin-bottom: 25px;
+}
+
+.hobby-icon i {
+    font-size: 20px;
+    color: #54C8FF;
+}
+
+
+/* HOBBY TEXT */
+
+.hobby-card h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 19px;
+
+    color: white;
+
+    margin-bottom: 10px;
+}
+
+.hobby-card p {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+
+    line-height: 1.8;
+    color: #91A4BD;
+
+    max-width: 250px;
+}
+
+
+/* GAME TAGS */
+
+.game-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+
+    margin-top: 15px;
+}
+
+.game-tags span {
+    font-family: 'Inter', sans-serif;
+    font-size: 9px;
+
+    color: #54C8FF;
+
+    background: rgba(72, 201, 255, 0.08);
+
+    border: 1px solid rgba(72, 201, 255, 0.15);
+
+    padding: 5px 8px;
+    border-radius: 4px;
+}
+
+
+/* CARD NUMBER */
+
+.hobby-number {
+    position: absolute;
+
+    top: 20px;
+    right: 22px;
+
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+
+    color: #40556D;
+}
+
+
+/* =========================
+   PERSONAL PHILOSOPHY
+========================= */
+
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    #about {
+        padding: 90px 7%;
+    }
+
+    .hobby-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    #about {
+        padding: 80px 6%;
+    }
+
+    .hobby-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-intro h3 {
+        font-size: 17px;
+    }
+
+    .about-description p {
+        font-size: 13px;
+        text-align: left;
+    }
+
+    .hobby-section {
+        margin-top: 70px;
+    }
+
+    
+}

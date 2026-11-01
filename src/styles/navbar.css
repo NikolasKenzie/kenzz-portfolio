@@ -1,0 +1,26 @@
+#con-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(3px);
+}
+#con-listNav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 20px;
+}
+
+#con-listNav li {
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+}
+#con-listNav li:hover {
+  border-bottom: 1px solid #67d9ff;
+  color: #67d9ff;
+}
