@@ -55,6 +55,20 @@ export default function About() {
           <div className="hobby-container">
             <div className="hobby-card">
               <div className="hobby-icon">
+                <i className="fa-solid fa-guitar"></i>
+              </div>
+
+              <h3>Music</h3>
+
+              <p>
+                Some feelings are better expressed through strings than words.
+              </p>
+
+              <span className="hobby-number">03</span>
+            </div>
+
+            <div className="hobby-card">
+              <div className="hobby-icon">
                 <i className="fa-solid fa-trophy"></i>
               </div>
 
@@ -87,19 +101,6 @@ export default function About() {
             </div>
 
             {/* MUSIC */}
-            <div className="hobby-card">
-              <div className="hobby-icon">
-                <i className="fa-solid fa-guitar"></i>
-              </div>
-
-              <h3>Music</h3>
-
-              <p>
-                Some feelings are better expressed through strings than words.
-              </p>
-
-              <span className="hobby-number">03</span>
-            </div>
           </div>
         </div>
       </div>
