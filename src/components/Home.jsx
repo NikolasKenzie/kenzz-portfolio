@@ -33,11 +33,11 @@ export default function Home() {
           </p>
 
           <div className="button-home">
-            <a href="#projects" className="btn-primary">
+            <a href="#about" className="btn-primary">
               About Me <span>&#8599;</span>
             </a>
 
-            <a href="#contact" className="btn-secondary">
+            <a href="#skills" className="btn-secondary">
               Skills &rarr;
             </a>
           </div>

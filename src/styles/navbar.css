@@ -2,25 +2,65 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+
   padding: 20px;
+
   position: sticky;
   top: 0;
   z-index: 900;
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(3px);
+
+  background: rgba(5, 9, 18, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
+
 #con-listNav {
   display: flex;
   flex-direction: row;
   list-style: none;
-  gap: 20px;
+  gap: 25px;
 }
 
-#con-listNav li {
-  cursor: pointer;
+#con-listNav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
   transition: 250ms ease-in-out;
 }
-#con-listNav li:hover {
-  border-bottom: 1px solid #67d9ff;
+
+#con-listNav a:hover {
   color: #67d9ff;
+}
+
+/* Smooth Navigation */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Prevent navbar from covering section headings */
+
+section {
+  scroll-margin-top: 85px;
+}
+
+
+#con-listNav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 250ms ease-in-out;
+}
+
+/* Hover */
+#con-listNav a:hover {
+    color: #67D9FF;
+}
+
+/* Active Section */
+#con-listNav a.active {
+    color: #67D9FF;
+    border-bottom: 1px solid #67D9FF;
+    padding-bottom: 5px;
 }
