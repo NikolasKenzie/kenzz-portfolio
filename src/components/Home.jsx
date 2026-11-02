@@ -15,8 +15,8 @@ export default function Home() {
             <p className="greeting">HELLO, WORLD! I'M</p>
 
             <h1>
-              Nikolas Kenzie
-              <span> Winata.</span>
+              Nikolas Kenzie <br></br>
+              <span> Winata</span>
             </h1>
 
             <p className="nickname">Just call me Kenzie for short.</p>

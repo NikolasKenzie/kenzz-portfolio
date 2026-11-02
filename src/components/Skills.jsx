@@ -5,7 +5,7 @@ export default function Skills() {
 
     const categories = [
         {
-            number: "01",
+            
             title: "Programming Languages",
             skills: [
                 { name: "JavaScript", level: "Intermediate" },
@@ -16,7 +16,7 @@ export default function Skills() {
             ]
         },
         {
-            number: "02",
+            
             title: "Libraries & Frameworks",
             skills: [
                 { name: "Tailwind CSS", level: "Beginner" },
@@ -26,7 +26,7 @@ export default function Skills() {
             ]
         },
         {
-            number: "03",
+            
             title: "Tools & Software",
             skills: [
                 { name: "Visual Studio Code", level: "Advanced" },
@@ -55,7 +55,6 @@ export default function Skills() {
                     <div className="skill-section" key={category.number}>
 
                         <div className="skill-section-header">
-                            <span>{category.number}</span>
                             <h3>{category.title}</h3>
                         </div>
 
